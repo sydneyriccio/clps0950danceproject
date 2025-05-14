@@ -102,3 +102,24 @@ def plot_performance(self):
     plt.ylabel('Number of Moves Correct')
     plt.title('Dance Memory Trainer Performance')
     plt.show()
+
+# Step 8: Analyze memory performance
+def analyze_performance(self):
+    print("\n--- Cognitive Load Analysis ---")
+    if self.performance:
+        avg = sum(self.performance) / len(self.performance)
+        print(f"Average moves recalled: {avg:.2f}")
+    else:
+        print("No data to analyze.")
+
+    # Find the first round where the player failed and made a msitake
+    fail_rounds = [r['round'] for r in self.detailed_results if not r['correct']]
+    if fail_rounds:
+        print(f"First failure occured at Round {fail_rounds[0]}")
+    else:
+        print("Perfect performance!")
+
+    # This interpretation connects the project back to psychology
+    print("This simulates how dancers or learners struggle with increasing memory load.")
+    print("As the sequence grows, it gets harder to hold all items in working memory.")
+    print("This mirrors real-world memory breakdowns and the importance of chunking or rehearsal.")
