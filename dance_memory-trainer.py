@@ -93,3 +93,12 @@ def play_game(self):
     print("Your performance per round:")
     for i, moves in enumerate(self.performance, 1):
         print(f"Round {i}: {moves} moves")
+
+# Step 7: Plot performance graph
+def plot_performance(self):
+    # Looked up how to use matplotlib to make a basic bar chart in Python: visualizes how far the player got before making a mistake!
+    plt.bar(range(1, len(self.performance) + 1), self.performance)
+    plt.xlabel('Round')
+    plt.ylabel('Number of Moves Correct')
+    plt.title('Dance Memory Trainer Performance')
+    plt.show()
