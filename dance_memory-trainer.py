@@ -58,3 +58,24 @@ def play_round(self):
 
     self.show_sequence()
     player_input = self.get_player_input ()
+
+    # Check whether the player input matches the full sequence exactly 
+    correct = player_input == self.sequence
+
+    # Save round data for future analysis
+    self.detailed_results.append([{
+        "round": self.round,
+        "sequence": self.sequence.copy(),
+        "input": player_input,
+        "correct": correct
+    }])
+
+    if correct: 
+        print("✅ Correct! Moving to the next round.")
+        self.performance.append(len(self.sequence))
+        self.round += 1
+        return True
+    else:
+        print("\n❌ Incorrect!")
+        print(f"The correct sequence was: {' '.join(self.sequence)}")
+        return False
