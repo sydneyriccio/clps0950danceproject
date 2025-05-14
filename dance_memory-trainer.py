@@ -79,3 +79,17 @@ def play_round(self):
         print("\n❌ Incorrect!")
         print(f"The correct sequence was: {' '.join(self.sequence)}")
         return False
+    
+# Step 6: Run the game loop
+def play_game(self):
+    print("Welcome to the Dance Memory Trainer")
+    print("Try to memorize and repeat the growing sequence of dance moves!\n")
+
+    while True:
+        if not self.play_round():
+            break
+
+    print(f"\nGame over! You reached Round {self.round}.")
+    print("Your performance per round:")
+    for i, moves in enumerate(self.performance, 1):
+        print(f"Round {i}: {moves} moves")
