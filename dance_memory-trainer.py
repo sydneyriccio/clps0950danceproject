@@ -123,3 +123,18 @@ def analyze_performance(self):
     print("This simulates how dancers or learners struggle with increasing memory load.")
     print("As the sequence grows, it gets harder to hold all items in working memory.")
     print("This mirrors real-world memory breakdowns and the importance of chunking or rehearsal.")
+
+# Step 9: Run the full program
+def main():
+    # You can switch to simulate mode if you want to test memory limit behavior too!
+    # game = DanceMemoryGame(mode='simulate", memory_limit=6)
+
+    #Interactive mode allows the player to type responses manually!
+    game = DanceMemoryGame(mode="interactive")
+    game.play_game()
+    game.plot_performance()
+    game.analyze_performance()
+
+# Standard Python convention to run the game only if this file is executed directly
+if __name__ == "__main__":
+    main()
