@@ -24,11 +24,12 @@ This game reflects key principles of cognitive psychology:
 
 ## Features
 
-- Randomly generated dance moves
-- Progressively harder levels
-- User input checking
-- Performance tracking
-- Automatic bar chart visulatization using 'matplotlib'
+- Interactive play mode (user types responses)
+- Simulated player mode (to test working memory limits)
+- Visualized performance using a bar graph (`matplotlib`)
+- Round-by-round tracking of memory accuracy
+- Cognitive load analysis: average recall span and failure point
+- Modular code structure using classes and functions
 
 ## Requirements
 
