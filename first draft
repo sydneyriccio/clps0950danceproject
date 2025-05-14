@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 # Step 1: Setup - Import Libraries and Define Dance_Moves
 import random; # helps to shuffle random dance moves in each round
 import matplotlib.pyplot as plt; # used to create a graph of the player's performance after the game
 
+=======
+# clps0950danceproject
+%% Step 1: Setup - Import Libraries and Define Dance_Moves
+import random; % helps to shuffle random dance moves in each round
+import matplotlib.pyplot as plt; % used to create a graph of the player's performance after the game
+>>>>>>> 8727a7c (Updated README)
 Dance_Moves = [
     "spin - turn to your right", 
     "pop - sharp chest movement", 
